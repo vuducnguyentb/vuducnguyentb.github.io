@@ -1,0 +1,25 @@
+*{
+	margin:0;
+	padding:0;
+}
+h1{
+	text-align: center;
+	color:#000;
+}
+.list-product .product{
+	float:left;
+	margin-left:20px;
+}
+.list-product .product a{
+	text-decoration: none;
+}
+.list-product .product img{
+	max-width: 300px;
+}
+.list-product .product h4,h3{
+	text-align: center;
+	text-transform: uppercase;
+}
+.list-product .product a:hover h4,h3{
+	color:red;
+}
