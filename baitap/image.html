@@ -17,19 +17,22 @@
 		border: 1px solid #888;
 	}
 	#menu{
+		width: 100%;
 		float:left;
 		background-color: #fff;
-		height: 50px;
-		line-height:50px;
+		height: 80px;
+		line-height:80px;
 	}
-	#menu ul li{
-		list-style: none;
-	}
-	#menu ul li>a{
+	#menu>a{
 		margin-left: 50px;
 		text-decoration: none;
 		font-size: 18px;
 		margin-right: 80px;
+	}
+	#menu>a :first-child{
+		padding:4px;
+		background-color:#CC2EFA;
+		border-radius: 50%;
 	}
 	#banner img{
 		width: 100%;
@@ -53,20 +56,18 @@
 </head>
 <body>
 	<div class="wrapper">
-		<div id="menu">
-			<ul>
-				<li>
-					<a href="">Home</a>
-					<a href="">About me</a>
-					<a href="">Shop Blog</a>
-					<a href="">Contact</a>
-					<a href="">Portfolino</a>
-				</li>
-			</ul>
-		</div>
 		<div id="banner">
 			<img src="pubg.jpg" alt="logo" title="logo la day">
 		</div>
+		<div id="menu">
+			<a href=""><img src="images/c4.jpg" alt=""></a>
+			<a href="">Home</a>
+			<a href="">About me</a>
+			<a href="">Shop Blog</a>
+			<a href="">Contact</a>
+			<a href="">Portfolino</a>
+		</div>
+
 		<div id="contain">
 			<div class="animal">
 				<img src="images/ct1.jpg" alt="anh chua hien thi" title="day la tieu de anh">
