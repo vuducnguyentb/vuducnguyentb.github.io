@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	color: #333;
+}
+#wrapper{
+	max-width:1000px;
+	background-color:#E6E6E6;
+	border:1px solid #666;
+	margin:auto;
+	position:relative;
+}
+.logo {
+	position:absolute;
+	max-width: 140px;
+	top:10px;
+	left:10px;
+	opacity: 0.8;
+}
+.logo img{
+	width: 100%;
+	border:3px solid #2E2EFE;
+	border-radius:50%;
+}
+.banner{
+	width: 100%;
+}
+.banner img{
+	max-width: 100%;
+}
+.container{
+	float: left;
+	width: 100%;
+	border:1px solid #666;
+	position: relative;	
+}
+.left-container{
+	float:left;
+	width:20%;
+	background-color: #A9F5F2;
+	position: absolute;
+}
+.left-container ul{
+	text-align: left;
+	list-style: none;
+}
+.left-container ul li{
+	line-height: 40px;
+	height: 40px;
+	border-bottom: 1px solid #ccc;
+}
+.left-container ul li a{
+	padding-left: 50px;
+	text-decoration:none;
+	display: block;
+	font-weight: 600;
+}
+.right-container{
+	margin-left: 20%;
+	float:left;
+	width: 80%;
+	background-color: #F781F3;
+}
+.right-container .product{
+	width:33.3333333333333333333%;
+	float:left;
+	text-align:center;
+}
+.right-container .product a{
+	text-decoration: none;
+	font-weight: 600;
+}
+.right-container .product img{
+	width: 100%;
+}
+.footer{
+	float: left;
+	width: 100%;
+	background-color: #2E9AFE;
+	height: 100px;
+}
+.scroll{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+.scroll img{
+	border: 1px solid #81F781;
+	border-radius: 50%;
+	transition: all 1s;
+}
+.scroll:hover img{
+	transform:rotate(5turn);
+}
