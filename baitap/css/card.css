@@ -1,0 +1,120 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.wrapper{
+	position:relative;
+	max-width: 100%;
+}
+.background {
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+}
+.background img{
+	width: 100%;
+}
+@keyframes m-left {
+	0%{top:0;left:0;color:#F8E0E0}
+	20%{top:0;left:15%;color:#F8E6E0}
+	40%{top:0;left:25%;color:#F8ECE0}
+	60%{top:0;left:35%;color:#F7F2E0}
+	80%{top:0;left:45%;color:#F7F8E0}
+	100%{top:0;left:55%;color:#F1F8E0}
+	
+}
+.title-header{
+	font-size: 2em;
+	position: absolute;
+	z-index: 11;
+	color: rgba(240,255,240);
+	animation: m-left 2s ease infinite;
+}
+@keyframes m-aroud{
+	0%{transform:rotate(1turn)}
+	20%{transform:rotate(2turn)}
+	40%{transform:rotate(3turn)}
+	60%{transform:rotate(4turn)}
+	80%{transform:rotate(5turn)}
+	100%{transform:rotate(6turn)}
+}
+@keyframes opa{
+	0%{opacity: 0}
+	20%{opacity: 0.2}
+	40%{opacity: 0.4}
+	60%{opacity: 0.6}
+	80%{opacity: 0.8}
+	100%{opacity:1}
+}
+.icon-witch{
+	max-width: 10%;
+	position:fixed;
+	z-index: 11;
+	top:-20px;
+	left:-20px;
+	-webkit-animation: infinite;
+	-moz-animation: infinite;
+	-o-animation: infinite;
+	animation: m-aroud 5s ease infinite,opa 3s ease infinite;
+}
+.icon-witch img{
+	width: 100%;
+}
+.icon-bumbkin{
+	max-width: 10%;
+	position:fixed;
+	z-index: 11;
+	top:-20px;
+	right:-20px;
+	-webkit-animation: infinite;
+	-moz-animation: infinite;
+	-o-animation: infinite;
+	animation:opa 3s ease infinite;
+}
+.icon-bumbkin img{
+	width:80%;
+}
+@keyframes move-right{
+	0%{opacity: 0;right: 0;}
+	20%{opacity: 0.2;right:15%;}
+	40%{opacity: 0.4;right:35%;}
+	60%{opacity: 0.6;right:55%;}
+	80%{opacity: 0.8;right:75%;}
+	100%{opacity:1;right:95%;}
+}
+.icon-ghost{
+	position:fixed;
+	z-index: 12;
+	bottom: 0;
+	right: 0;
+	-webkit-animation: infinite;
+	-moz-animation: infinite;
+	-o-animation: infinite;
+	animation:move-right 5s ease infinite;
+}
+@keyframes zoom{
+	0%{opacity: 0;transform: scale(1);}
+	20%{opacity: 0.2;transform: scale(1.5);}
+	40%{opacity: 0.4;transform: scale(2);}
+	60%{opacity: 0.6;transform: scale(2.5);}
+	80%{opacity: 0.8;transform: scale(3);}
+	100%{opacity:1;transform: scale(3.5);}
+}
+.icon-fire{
+	max-width:5%;
+	position:fixed;
+	z-index: 13;
+	bottom: 0;
+	left:5%;
+	-webkit-animation: infinite;
+	-moz-animation: infinite;
+	-o-animation: infinite;
+	animation:zoom 1s ease infinite;	
+}
+.icon-fire img{
+	width: 100%;
+}
+
+
+
