@@ -1,0 +1,250 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Tahoma;
+	color: #333;
+}
+body{
+	background: transparent url(https://d4.violet.vn/uploads/blogs/729293/layout/nen2.gif) repeat fixed center top;background: transparent url(https://d4.violet.vn/uploads/blogs/729293/layout/nen2.gif) repeat fixed center top;
+}
+#wrapper{
+	max-width:1000px;
+	margin: auto;
+	background-color:#ededed;
+}
+.warning{
+	position: fixed;
+	top: 20px;
+	z-index: 9999;
+}
+.header{
+	width: 100%;
+}
+.header img{
+	width: 100%;
+	vertical-align: middle;
+}
+.menu{
+	width: 100%;
+}
+.menu >ul{
+	width: 100%;
+	text-align: center;
+	list-style: none;
+	background-color: #BCA9F5;
+}
+.menu>ul>li{
+	display: inline-block;
+	width: 120px;
+	height:40px;
+	line-height: 40px;
+	position: relative;
+}
+.menu>ul>li>a{
+	display: block;
+	text-decoration: none;
+	font-weight: 600;
+}
+.menu>ul>li>a:hover {
+	color:#ededed;
+	background-color: #333;
+}
+.menu>ul>li:hover .sub-menu{
+	display: block;
+}
+.sub-menu{
+	width: 100%;
+	text-align: center;
+	list-style: none;
+	background-color: #BCA9F5;
+	position: absolute;
+	z-index: 10;
+	display: none;
+}
+.sub-menu li{
+	display: inline-block;
+	width: 120px;
+	height:40px;
+	line-height: 40px;
+	/* margin-left:-5px; */
+}
+.sub-menu li a{
+	display: block;
+	text-decoration: none;
+	font-weight: 600;
+	text-align:left;
+	padding-left:10px;
+}
+.sub-menu li a:hover {
+	color:#ededed;
+	background-color: #333;
+}
+.adv{
+	width: 100%;
+}
+@keyframes slide {
+	0%{opacity:1; }
+	20%{opacity:0.8;}
+	40%{opacity:0.6;}
+	60%{opacity:0.4;}
+	80%{opacity:0.2;}
+	100%{opacity:0;}
+	
+}
+.adv img{
+	width:50%;
+	display:block;
+	float: left;
+	border-bottom: 2px solid #EED952;
+	vertical-align:middle;
+	/* animation: slide 3s ease infinite; */
+}
+.container{
+	width: 100%;
+}
+.free-week{
+	width: 100%;
+	text-align:center;
+	background: #000 url(../images/bg1.jpg) repeat-y center;
+	border-bottom: 2px solid #EED952;
+}
+@keyframes color-title{
+	0%{background-color:#190B07;color:#F8E0E0}
+	20%{background-color:#1B2A0A;color:#F7F8E0}	
+	40%{background-color:#0A2A12;color:#CEF6D8}
+	60%{background-color:#0A2229;color:#A9BCF5}
+	80%{background-color:#0A0A2A;color:#ECCEF5}
+	100%{background-color:#2A0A1B;color:#FAFAFA}
+}
+.free-week h1{
+	-webkit-animation: infinite;
+	-moz-animation: infinite;
+	-o-animation: infinite;
+	animation: color-title 3s ease infinite;
+}
+.free-week img{
+	width: 100%;
+	vertical-align:middle;
+}
+.img-game{
+	width: 100%;
+	background: url(../images/gift3.gif)bottom center repeat;
+	overflow: hidden;
+}
+/* @keyframes color-bg {
+	0%{background-color:#190B07;}
+	20%{background-color:#1B2A0A;}	
+	40%{background-color:#0A2A12}
+	60%{background-color:#0A2229;}
+	80%{background-color:#0A0A2A;}
+	100%{background-color:#2A0A1B;}
+	
+	} */
+	.img-game img{
+		width: 100%;
+		vertical-align:middle;
+
+
+	}
+	.img-game h2{
+		color: #fff;
+		text-align:center;
+		margin-bottom: 5px;
+	}
+	.img-game p{
+		color: #fff;
+		text-align:center;
+		margin-bottom: 5px;
+	}
+	.config-game{
+		width:100%;
+	}
+	.col-config{
+		width: 50%;
+		border: 1px solid #ae903b;
+		float:left;
+	}
+	.col-left{
+		width: 20%;
+		text-align:center;
+		float:left;
+	}
+	.col-right{
+		width: 80%;
+		float:left;
+	}
+	.col-left img{
+		width:80%;
+		border: 1px solid #ae903b;
+	}
+	.col-right h3{
+		color: #fff;
+		text-align:center;
+	}
+	.list-ranks{
+		margin-top: 10px;
+		width: 100%;
+	}
+	.list-ranks h1{
+		color: #fff;
+		text-align:center;
+		animation: color-title 3s ease infinite;
+	}
+	.rank{
+		width: 29.33333%;
+		padding: 2%;
+		margin: 2%;
+		border: 1px solid #a99149;
+		float: left;
+	}
+	.rank p img{
+		vertical-align: middle;
+		height: auto;
+	}
+	.rank h2{
+		text-transform: uppercase;
+		font-size: 18px;
+		margin-top: 10px;
+		border-top: 1px solid #a99149;
+		padding-top: 10px;
+	}
+
+	.clear{
+		clear: both;
+	}
+
+	.footer{
+		text-align:center;
+		background-color: #070719;
+	}
+	.footer img{
+		vertical-align: middle;
+		border-bottom: 1px solid #ededed;
+	}
+	.footer p{
+		color: #fff;
+	}
+	.top{
+		width:45px;
+		height:45px;
+		position: fixed;
+		z-index: 8888;
+		bottom: 50px;
+		right: 50px;
+	}
+	@keyframes opa{
+		0%{filter:opacity(30%);}
+		25%{filter:opacity(50%);}
+		50%{filter:opacity(70%);}
+		75%{filter:opacity(90%);}
+		100%{filter:opacity(100%);}
+	}
+/* .top:hover img{
+	animation:opa 3s ease ease-in-out;
+	} */
+	.top img{
+		width: 100%;
+		border-radius: 50%;
+		border: 1px solid #888;
+	}
