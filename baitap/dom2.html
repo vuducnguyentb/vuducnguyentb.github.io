@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tinh tổng</title>
+</head>
+<body>
+	<h1>TÍnh tổng</h1>
+	x = <input type="text" id="x"><br>
+	y = <input type="text" id="y"><br>
+	<input type="button" id="tinh" value="Kết quả" onclick="tong();"><br>
+	<b id="kq"></b>
+</body>
+<script type="text/javascript">
+	function tong(){
+		var x= document.getElementById("x").value;
+		var y= document.getElementById("y").value;
+		var kq =document.getElementById("kq").innerHTML= Number(x)+ Number(y);
+	}
+</script>
+</html>

@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Tahoma;
+	color:#333;
+}
+body{
+	background-image: url(../images/banner.jpg);
+}
+#caculator{
+    margin: 50px auto;
+	background-color: #b82e96;
+	opacity: 1;
+	width: 226px;
+}
+.button{
+	width:50px;
+	height:50px;
+	font-size:20px;
+	margin: 2px;
+	cursor: pointer;
+}
+.textview{
+	width: 218px;
+	margin: 5px;
+	height: 50px;
+	font-size: 25px;
+	padding:10px;
+}
