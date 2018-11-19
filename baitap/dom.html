@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Khai thông dom</title>
+	<link rel="stylesheet" type="text/css" href="css/dom.css">
+</head>
+<body>
+	<div id="wrapp">
+		<div id="header">
+			<img src="images/banner.jpg" alt="">
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="">Trang chủ</a></li>
+				<li><a href="">Menu</a></li>
+				<li><a href="">About us</a></li>
+				<li><a href="">Contact us</a></li>
+			</ul>
+		</div>
+		<div id="container">
+			<h1  style="text-align:center">Những đoạn văn chọn lọc</h1>
+			<p id="p1">
+				Ngày tháng vẫn êm đêm trôi, nó cuốn đi theo biết bao điều trong cuộc sống.Tuổi thơ của mỗi con người chúng ta cũng được thời gian lần lượt cuốn theo. Cái khoảng trời thơ ấu đó giờ đây chỉ còn là những hoài niệm,nhưng,những cảm xúc của tuổi thơ thì cứ mới như là hôm qua !Những xúc cảm đầu đời về tự nhiên,về con người sao mà tràn trề, mạnh mẽ quá !
+				Tuổi thơ của tôi đã trải dài trên vùng đất cư xá, trải dài trên con sông Sài Gòn. Con sông ôm chặc cù lao Thanh Đa và ngày ngày dòng sông hiền hoà,nhẫn nại chăm mớm cho vùng đất này biết bao là phù sa,nắng vàng gió mát.Nó như bầu sữa căng đầy của người mẹ thấm truyền từng giọt vào cơ thể của con.Từ đó, Thanh Đa xanh mượt mà,màu xanh đầy ăm ắp sinh lực.Dòng sông Thanh Đa đã tràn vào tuổi thơ của tôi,của bạn bè tôi…nó chảy vào tận cùng trong từng nỗi nhớ.
+			</p>
+			<p id="p2">
+				Mối tình đầu cũng như tiếng chuông vậy. Nó đã qua rồi dẫu rằng ta vẫn nghe như những âm vang của nó còn đọng mãi. Không ai có thể tìm thấy một tiếng chuông, cũng như không ai nên cố tìm cách giữ lại một tiếng chuông. Hãy để những cơn gió nguyên sơ mang tiếng chuông ấy đi xa. Nếu không thể tạo ra một điều tốt hơn hiện tại, thì cũng không nên phá vỡ hiện tại.
+			</p>
+			<p id="p3">
+				Bạn tôi, là một cô gái tội nghiệp trong số những thiếu nữ hẩm hiu bất hạnh. Bạn không có nét quyến rũ, lộng lẫy dù đang lúc thanh xuân khởi sắc. Bạn chỉ là một vóc dáng nhỏ bé linh hoạt, tóc nâu nhạt và đôi mắt luôn sáng ánh ngạc nhiên, loáng lạ lẫm của tâm hồn đơn giản trung hậu trước những điều dữ dội, đe dọa từ cuộc sống. Bạn mất cha từ tấm bé nên gia đình đã là một điều phiền muộn u uẩn, và lớp học, nơi bạn hằng ngày nôn nao đi về, đôi khi cũng gây nên đớn đau.
+			</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function changeFontSize(x){
+			var p= document.getElementsByTagName('p');
+			for(var i=0;i<p.length;i++){
+				p[i].style.fontSize = x + "px";
+			}
+		}
+		// changeFontSize(26);
+		function increaseFontSize(paragraph){
+			//truy nhap the
+			var p= document.querySelector(paragraph);
+			//truy  nhap thuoc tinh font-size
+			var fontSize=window.getComputedStyle(p,null).getPropertyValue("font-size");
+			//tim vi tri cua chu px
+			var locationPx=fontSize.search('px');
+			//cat vi tri px di
+			var numfontSize = parseInt(fontSize.substr(0,locationPx));
+			if(numfontSize<30){
+				numfontSize++;
+				var newfontSize=numfontSize+'px';
+				p.style.fontSize = newfontSize;
+			}
+		}
+		// increaseFontSize('#p1');
+		function decreaseFontSize(x){
+			var p=document.querySelector(x);
+			var fontSize = window.getComputedStyle(p,null).getPropertyValue('font-size');
+			var locationPx=fontSize.search('px');
+			var numfontSize=parseInt(fontSize.substr(0,locationPx));
+			if(numfontSize>=9){
+				numfontSize--;
+				var newfontSize=numfontSize+'px';
+				p.style.fontSize = newfontSize;
+			}
+		}
+		// decreaseFontSize('#p2');
+		function changeColor(){
+			document.getElementById("p1").style.color='blue';
+			document.getElementById("p2").style.color='red';
+			document.getElementById("p3").style.color='yellow';
+		}
+		function changeBgColor(color){
+			document.getElementById("wrapp").style.background=color;
+		}
+		function copyContent(x,y){
+			var content1=document.getElementById(x);
+			var content2=document.getElementById(y);
+			var temp = content2.innerHTML;
+			content2.innerHTML = content1.innerHTML;
+			content1.innerHTML = temp;
+		}
+	</script>
+</body>
+</html>

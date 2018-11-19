@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>THông báo</title>
+	<style type="text/css" media="screen">
+	*{
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+		color: #fff;
+		font-family: tahoma;
+	}
+	#hidden{
+		background-color: #0404B4;
+		text-align: center;
+		display: none;
+	}
+	input{
+		display: block;
+		width:70px;
+		height:50px;
+		background-color: #333;
+		color: #000;
+	}
+</style>
+</head>
+<body>
+	<input type="submit" value="Show" onclick="hien()">
+	<input type="submit" value="Hidden" onclick="an()">
+	<div id="hidden">
+		<h1>Sống trong đời sống cần có 1 tấm lòng</h1>
+	</div>
+	<script type="text/javascript">
+		function hien(){
+			document.getElementById("hidden").style.display="block";
+		}
+		function an(){
+			document.getElementById("hidden").style.display="none";
+		}
+	</script>
+</body>
+</html>

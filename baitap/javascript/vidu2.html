@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tổng hiệu tích</title>
+	<style type="text/css" media="screen">
+		#kq{
+			margin:20px;
+			padding:30px;
+			color:black;
+			background-color:#ebebeb;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" name="" id="soa">
+	<input type="text" name="" id="sob">
+	<input type="button" value="Tính Tổng" onclick="Tong()">
+	<input type="button" value="Tính Hieu" onclick="Hieu()">
+	<input type="button" value="Tính Tích" onclick="Tich()">
+	<input type="button" value="Tính Thương" onclick="Thuong()">
+	<div id="kq"></div>
+	<script type="text/javascript">
+		function Tong(){
+			//lay du lieu tu input
+			var a= document.getElementById("soa").value;
+			var b= document.getElementById("sob").value;
+			var c= parseInt(a)+parseInt(b);
+			document.getElementById("kq").innerHTML=a+"+ "+b+" "+ "=" +c;
+		}
+				function Hieu(){
+			//lay du lieu tu input
+			var a= document.getElementById("soa").value;
+			var b= document.getElementById("sob").value;
+			var c= parseInt(a)-parseInt(b);
+			document.getElementById("kq").innerHTML=a+"- "+b+" "+ "=" +c;
+		}
+				function Tich(){
+			//lay du lieu tu input
+			var a= document.getElementById("soa").value;
+			var b= document.getElementById("sob").value;
+			var c= parseInt(a)*parseInt(b);
+			document.getElementById("kq").innerHTML=a+"* "+b+" "+ "=" +c;
+		}
+				function Thuong(){
+			//lay du lieu tu input
+			var a= document.getElementById("soa").value;
+			var b= document.getElementById("sob").value;
+			var c= parseInt(a)/parseInt(b);
+			document.getElementById("kq").innerHTML=a+": "+b+" "+ "=" +c;
+		}
+
+	</script>
+</body>
+</html>

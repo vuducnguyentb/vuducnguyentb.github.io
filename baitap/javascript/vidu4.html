@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quang cao</title>
+	<style type="text/css" media="screen">
+	#mainqc{
+		position: fixed;
+		bottom:20px;
+		right:20px;
+		width:200px;
+	}
+	#tatqc,#moqc{
+		width: 100%;
+		padding:5px 0;
+		background-color:teal;
+		text-align:right;
+	}
+	#moqc{
+		display: none;
+	}	
+	a{
+		text-decoration: none;
+		cursor: pointer;
+	}
+	a:hover{
+		color: #fff;
+		text-decoration:underline;
+	}
+	</style>
+</head>
+<body>
+	<div id="mainqc">
+		<div id="tatqc">
+			<a href="#" onClick="hide()">Tắt quảng cáo</a>
+		</div>
+		<div id="qc">
+			<a href="https://www.youtube.com/watch?v=OL0qo_zil30&index=5&list=PLMI-61XivrDqvizGzXM2MdH81cI0HVN3m" target="_blank">
+				<img src="../images/haloween.jpg" width="200px" alt="">
+			</a>
+		</div>
+		<div id="moqc">
+			<a href="#" onClick="show()">Mở quảng cáo</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function hide(){
+			document.getElementById("tatqc").style.display="none";
+			document.getElementById("qc").style.display="none";
+			document.getElementById("moqc").style.display="block";
+		}
+		function show(){
+			document.getElementById("tatqc").style.display="block";
+			document.getElementById("qc").style.display="block";
+			document.getElementById("moqc").style.display="none";
+		}
+	</script>
+</body>
+</html>

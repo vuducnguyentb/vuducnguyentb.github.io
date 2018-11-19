@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM test</title>
+	<script type="text/javascript">
+		//event lang nghe khi +document ready
+		document.addEventListener('DOMContentLoaded',function(){
+
+		//tham chieu den the h1  +getElementById
+		let headingElement= document.getElementById('heading');
+		console.log('Heading Element:',headingElement);
+		var attributesName= headingElement.getAttribute('class');
+		alert(attributesName);
+
+		// let htmlHeading=headingElement.innerHTML="Hayho.net";
+		// console.log('htmlHeading:',htmlHeading);
+		// //tham chieu den the p +getElementsByClassname
+		// let textElement= document.getElementsByClassName('text');
+		// console.log('textElement',textElement);
+		// //tham chieu tagname
+		// let textElement2=document.getElementsByTagName('p');
+		// console.log('textElement',textElement2);
+		// //tham chieu allselector
+		// let textElement3=document.querySelectorAll('.text');
+		// console.log('textElement 3',textElement3);
+
+		// let productlist=document.getElementById('product-list');
+		// console.log('Product list:',productlist);
+		// let product=productlist.getElementsByClassName('product-item');
+		// console.log('Product item:',product);
+	});
+
+</script>
+</head>
+<body>
+	<div id="wrapper">
+		<h1 id="heading" class="title-top">Dom Element javascript</h1>
+		<!-- <p class="text"> Get element by className</p>
+		<p class="text"> Get element by className</p>
+		<p class="text"> Get element by className</p>
+		<p class="text"> Get element by className</p>
+		<p class="text"> Get element by className</p> -->
+	</div>
+<!-- 	<div id="product-list">
+		<div class="product-item">Sub1</div>
+		<div class="product-item">Sub2</div>
+	</div>
+		<div id="product-list-2">
+		<div class="product-item">Sub3</div>
+		<div class="product-item">Sub4</div>
+	</div> -->
+	
+</body>
+</html>

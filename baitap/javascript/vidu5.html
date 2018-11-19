@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hiển thị ngày tháng năm</title>
+	<style type="text/css" media="screen">
+		#date{
+			width:800px;
+			margin:50px auto;
+			text-align: center;
+			background-color: teal;
+			color: #fff;
+			font-family: area;
+			font-size: 3em;
+			padding:20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="date"></div>
+	<script type="text/javascript">
+		var d= new Date();
+		var ngay=["Thứ 2","Thứ 3","Thứ 4","Thứ 5","Thứ 6","Thứ 7","Chủ nhật"];
+		var thang=[1,2,3,4,5,6,7,8,9,10,11,12];
+		document.getElementById("date").innerHTML="Hôm nay là thứ mấy?"+"<br>"+"Chắc chắn là Thứ "+ngay[d.getDay()]+" Ngay"+d.getDate()+" Tháng"+thang[d.getMonth()]+" Năm"+d.getFullYear();
+	</script>
+</body>
+</html>
