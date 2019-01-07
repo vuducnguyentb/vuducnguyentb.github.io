@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+.wrapp{
+    position: relative;
+    margin: auto;
+    padding: 15px;
+    height: 100%;
+    max-width: 1200px;
+    max-height: 100px;
+}
+.container{
+    position: relative;
+    overflow:auto;
+}
+.grid{
+    float: left;
+    padding: 10px;
+}
+.card{
+    position: relative;
+}
+.card .back{
+    transform:rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card:hover .back{
+    transform:rotateY(0);
+}
+.card:hover .font{
+    transform:rotateY(180deg);
+}
+/* backface-visibility thuoc tinh cua mat sau */
+.card .back,.card .font{
+    transition: ease-in 0.5s;
+    backface-visibility:hidden;
+}
