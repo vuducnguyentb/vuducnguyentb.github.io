@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Caculator</title>
 	<link rel="stylesheet" type="text/css" href="css/caculator.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<div id="caculator">
@@ -49,6 +50,7 @@
 			</tr>
 		</table>
 	</div>
+	<button id="btnChange" onclick="changeBg();">Change theme</button>
 </body>
 <script type="text/javascript">
 	function canbachai(x){
@@ -59,6 +61,9 @@
 	}
 	function phantram1(x){
 		result.value=1/x;
+	}
+	function changeBg(){
+	 $('body').css( "background-image","url(./images/haloween.jpg)" )
 	}
 </script>
 </html>

@@ -28,3 +28,13 @@ body{
 	font-size: 25px;
 	padding:10px;
 }
+#btnChange{
+	width: 150px;
+	height: 40px;
+	background: rgba(25,25,25,0.7);
+	cursor: pointer;
+	color: aliceblue;
+	text-align: center;
+	line-height: 40px;
+	margin-left: 45%;
+}
