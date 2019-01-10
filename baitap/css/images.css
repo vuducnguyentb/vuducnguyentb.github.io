@@ -74,7 +74,14 @@
 .img:hover img{
 	border-radius: 20%;
 }
-
+@media only screen and (max-width:500px){
+	body{
+		background-color: blueviolet;
+	}
+	.img{
+		width: 100%;
+	}
+}
 
 
 

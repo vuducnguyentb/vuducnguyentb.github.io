@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapp{
+    width: 100%;
+    max-width: 1440px;
+    background: rgba(250, 118, 118, 0.4);
+    height:1000px;
+    position: relative;
+    border: 1px solid rgb(117, 15, 15);
+    margin: auto;
+
+}
+.card{
+    position: relative;
+    float: left;
+    width: 255px;
+    height: 255px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 12px;
+}
+.card .front{
+    transform: rotateY(180deg);
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+   
+}
+.card:hover .front{
+    transform: rotateY(0);
+}
+.card:hover .back{
+    transform: rotateY(180deg);
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+}
+.card .front,.card .back{
+    transition: all 0.5s;
+    backface-visibility: hidden;
+}

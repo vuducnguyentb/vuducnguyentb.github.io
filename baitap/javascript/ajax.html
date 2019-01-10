@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Làm quen Ajax</title>
+</head>
+
+<body>
+    <script>
+        //khởi tạo ddooois tượng
+        var http = new XMLHttpRequest();
+        // chuẩn bị :phương thức,đường api,chấp nhận bất đồng bộ
+        http.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
+        //gửi yêu cầu
+        http.send();
+        //lắng nghe mỗi khi readyState thay đổi
+        http.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                renderUser(JSON.parse(this.responseText));
+            }
+        }
+        function renderUser(users) {
+            for(var user of users){
+                console.log(user);
+            }
+        }
+    </script>
+</body>
+
+</html>
