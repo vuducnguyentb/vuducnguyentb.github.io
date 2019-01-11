@@ -8,7 +8,7 @@ var a1 = document.querySelector('.a1');
 var a2 = document.querySelector('.a2');
 var a3 = document.querySelector('.a3');
 var btnNext = document.querySelector('.btn-next');
-var reSult=document.querySelector('.reSult');
+var reSult = document.querySelector('.reSult');
 var i = 0;
 var dem = 0;
 var choise = '';
@@ -78,7 +78,7 @@ function changeBg3() {
     answer2.style.color = '#000';
 }
 //hiển thị câu hỏi đầu tiên;
-titleQues.innerText = questions[0].title;
+titleQues.innerText ='Câu 1:'+questions[0].title;
 a1.innerText = questions[0].answer1;
 a2.innerText = questions[0].answer2;
 a3.innerText = questions[0].answer3;
@@ -88,15 +88,28 @@ answer2.value = questions[0].answer2;
 answer3.value = questions[0].answer3;
 //Bắt event Next
 let next = () => {
-    resultChoise=questions[dem].result;
-    console.log(resultChoise);
+    resultChoise = questions[dem].result;
+    console.log("Câu" + (dem + 1));
+    console.log("Đáp án đúng:" + resultChoise);
+
     let arr = document.getElementsByClassName('answer');
     let valueAnswer = ''
     for (i = 0; i <= arr.length; i++) {
         if (arr[i].checked) {
-            valueAnswer = i+1;
+            valueAnswer = i + 1;
             break;
         }
+    }
+    console.log("Bạn đã chọn"+valueAnswer);
+    if(resultChoise==valueAnswer){
+        point++;
+    }
+    console.log("Điểm hiện tại:"+point);
+    console.log("Dem:"+dem);
+    if(dem==4){
+        btnNext.innerHTML='FINISH';
+        alert("bạn được"+point+"điểm");
+        location.href='chaomung.html';
     }
     // for (var j = 0; j < questions.length; j++) {
     //     if (valueAnswer == questions[j].result) {
@@ -107,23 +120,31 @@ let next = () => {
     // }
 
     //Hiển thị các value của question ra input
+    titleQues.innerText = 'Câu'+[dem+2]+questions[dem+1].title;
+    a1.innerText = questions[dem+1].answer1;
+    a2.innerText = questions[dem+1].answer2;
+    a3.innerText = questions[dem+1].answer3;
+    answer1.value = questions[dem+1].answer1;
+    answer2.value = questions[dem+1].answer2;
+    answer3.value = questions[dem+1].answer3;  
     dem++;
-    titleQues.innerText = questions[dem].title;
-    a1.innerText = questions[dem].answer1;
-    a2.innerText = questions[dem].answer2;
-    a3.innerText = questions[dem].answer3;
-    answer1.value = questions[dem].answer1;
-    answer2.value = questions[dem].answer2;
-    answer3.value = questions[dem].answer3;  
-    if(dem==4){
-        btnNext.innerHTML='FINISH';
-    }
-    //tính điểm
-    if(resultChoise==valueAnswer){
-        point++;
-    }
-    console.log("Điểm là:"+point);
-    reSult.innerHTML="<h2> Bạn đã trả lời đúng"+point+"</h2>";F
-    console.log(point);
+    
+    // console.log("Dem:"+dem);
+    // //tính điểm
+    // if (resultChoise == valueAnswer) {
+    //     point++;
+    // }
+    // console.log("Điểm là:" + point);
+    // reSult.innerHTML = "<h2> Bạn đã trả lời đúng" + point + "</h2>";
+    // if (dem == 4) {
+    //     btnNext.innerHTML = 'FINISH';
+    //     // reSult.style.background='#888';
+    //     // reSult.innerHTML='<h2>Điểm của bạn là:'+point+"</h2>";
+    //     // reSult.style.display='block'; 
+    // }
+
+ 
+
+    // console.log("Điểm:"+point);
 }
 

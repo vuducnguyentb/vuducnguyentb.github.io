@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trang mở đầu QUIZ</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url('../../baitap/images/buffterfly1.jpg')
+        }
+        .container{
+        width: 600px;
+        height: 300px;
+        background: #61b9b982;
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%,40%);
+    }
+    .container h2{
+        text-align: center;
+        font-size: 36px;
+        color: antiquewhite;
+    }
+    .container input{
+        color: #121e5a;
+    width: 150px;
+    height: 50px;
+    background: #66f15c;
+    font-size: 30px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,10%);
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Sẵn sàng để thông não chữa bạn</h2>
+        <input type="submit" value="Sẵn sàng" onclick="ready()">
+    </div>
+
+</body>
+<script>
+    function ready(){
+        window.location.href='quiz.html';
+    }
+</script>
+
+</html>
