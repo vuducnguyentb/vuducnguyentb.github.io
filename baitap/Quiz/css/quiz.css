@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Coiny', cursive;
+    color: #888;
+}
+body{
+    background: url('../../images/trieuvan2.jpg');
+}
+#container{
+    width: 800px;
+    height: 300px;
+    background: rgba(56, 51, 51, 0.5);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,40%);
+    border-radius: 50px;
+}
+.question{
+    text-align: center;
+}
+.tit-ques{
+    font-size: 36px;
+    color: #7edfee;
+    background: darkmagenta;
+    border-radius: 50px;
+}
+.answer{
+    margin-top: 5px;
+    position: relative;
+    color: black;
+    background: #7ded8a;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-next{
+    width: 150px;
+    height: 40px;
+    font-size: 24px;
+    float: right;
+    margin: 5px 20px;
+    color: #0d0d38;
+    background: #f37878;
+    border-radius: 5px;
+    cursor: pointer;
+}
