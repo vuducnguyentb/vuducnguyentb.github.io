@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</script>
+<style>
+        .selected{
+            color: #006600;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+        <div>
+                <span>Nguyễn Văn Cường</span>
+                <span>Thái Hoàng Chương</span>
+                <span>Dương Triệu vũ</span>
+            </div>
+            <div>
+                <span>Nguyễn Văn Cường</span>
+                <span>Thái Hoàng Chương</span>
+                <span>Dương Triệu vũ</span>
+            </div>
+            <script>
+                $("div span:first-child")
+                        .hover(function () {
+                            $(this).addClass("selected");
+                        }, function () {
+                            $(this).removeClass("selected");
+                        });
+            </script>
+
+</body>
+</html>

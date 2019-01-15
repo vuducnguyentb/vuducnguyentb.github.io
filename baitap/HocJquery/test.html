@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    .red{
+    background: red;
+  }
+  .wrapper{
+    width: 100%;
+    background: #792d2d;
+  }
+  .wrapper h1{
+    color: aqua;
+    background: #987909;
+  }
+  .btn-top{
+    position: fixed;
+    bottom:10px;
+    right: 10px;
+  }
+  </style>
+  <title>TEst</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1 class="heading">JQuery</h1>
+   
+    <input type="button" name="" id="" value="Scroll top" class="btn-top">
+
+  </div>
+  <script src="jquery.min.js"></script>
+  <script>
+    //document ready
+    $(function () {
+      // headingE.attr("title","cái méo gì v");
+      // var btnTop=$('.btn-top');
+      // btnTop.click(function(){
+      //   $('html,body').animate({scrollTop:0},"slow")
+      // });
+      // var headingE=$('.heading');
+      // headingE.on('toggle',function(){
+      //   alert("click r nha")
+      // })
+      $.ajax({
+        type:"get",
+        url:"http://superdev.sondn.com/api/v1/courses",
+        dataType:"json",
+        // data:{
+        //   name:'Javascript',
+        //   description:"Javascript description",
+        //   is_active:"active"
+        // },
+        success:function(responsive,status){          
+          console.log('Status----->',status);
+          $.each(responsive,function(index,course){
+            console.log("index-------->",index);
+            console.log("Course-------->",course);
+          })
+        },
+        error:function(error){
+          console.log("error------------->",error);
+        }
+      });
+    })
+  </script>
+</body>
+
+</html>

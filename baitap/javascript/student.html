@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script>
+
+      var students = [
+        {
+          name: 'Cao Việt Hà',
+          avatar: 'https://danongonline.com.vn/wp-content/uploads/2018/02/anh-girl-xinh-9-1.jpg',
+          age: 16,
+          address: 'Việt Nam'
+        },
+        {
+          name: 'Nguyễn Thanh Hoàn',
+          avatar: 'http://sohanews.sohacdn.com/thumb_w/660/2018/2/12/photo1518395173822-15183951738221946713251.jpg',
+          age: 14,
+          address: 'China'
+        },
+        {
+          name: 'Thuỳ Dương',
+          avatar: 'https://znews-photo.zadn.vn/w660/Uploaded/ofh_fdmzsofw/2018_02_15/201710100427022.jpg',
+          age: 13,
+          address: 'Việt Nam'
+        },
+        {
+          name: 'Mông',
+          avatar: 'https://danongonline.com.vn/wp-content/uploads/2018/02/anh-girl-xinh-9-1.jpg',
+          age: 13,
+          address: 'Việt Nam'
+        }
+      ];
+
+      // Name: Array - Mảng
+      // Số thứ tự: Index / Key
+      // Độ dài: Length
+      // Cách khai báo 1 array: var myArray = [];
+      //                        var myArray = new Array();
+
+      function documentReady() {
+
+        // chay 1 lan luc vao website
+        renderStudents();
+
+
+        // create a student
+        var isSubmit = document.getElementById('save');
+        isSubmit.onclick = function() {
+          var fullname = document.getElementById('name');
+          var avatar = document.getElementById('avatar');
+          var age = document.getElementById('age');
+          var address = document.getElementById('address');
+
+          var newStudent = {
+            name: fullname.value,
+            avatar: avatar.value,
+            age: age.value,
+            address: address.value,
+          }
+
+
+          students.push(newStudent);
+          renderStudents();
+        }
+
+        setTimeout(function() {
+
+          students.splice(1, 1, {
+            name: 'Cao Việt Hà',
+            avatar: 'https://danongonline.com.vn/wp-content/uploads/2018/02/anh-girl-xinh-9-1.jpg',
+            age: 16,
+            address: 'Việt Nam'
+          });
+
+          renderStudents();
+
+        }, 3000);
+
+      }
+
+
+      // ham tao ra giao dien danh sach sinh vien
+      function renderStudents() {
+        var html = '';
+        for (var student of students) {
+          html += '<li>';
+          html += '  <img src="' + student.avatar + '" alt="">';
+          html += '  <h3>' + student.name + '</h3>';
+          html += '  <p>Age: ' + student.age + '</p>';
+          html += '  <p>Address: ' + student.address + '</p>';
+          html += '</li>';
+        }
+
+        var studentList = document.getElementById('student-list');
+        studentList.innerHTML = html;
+      }
+
+
+
+    </script>
+
+    <style media="screen">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        padding: 20px;
+      }
+
+      ul li {
+        width: 200px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-left: 8px;
+        box-shadow: 0 0 5px #ccc;
+        list-style: none;
+        padding: 16px 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        float: left;
+        margin-bottom: 16px;
+      }
+
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        margin-bottom: 20px;
+      }
+
+      p {
+        padding: 8px 0;
+      }
+
+      input {
+        padding: 8px 16px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+
+
+  <body onload="documentReady();">
+
+    <input type="text" id="name" placeholder="Name" />
+    <input type="text" id="avatar" placeholder="Avatar" />
+    <input type="text" id="age" placeholder="Age" />
+    <input type="text" id="address" placeholder="Address" />
+    <input type="button" id="save" value="Create" />
+
+    <ul id="student-list">
+
+    </ul>
+
+  </body>
+</html>

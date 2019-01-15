@@ -148,3 +148,9 @@ let next = () => {
     // console.log("Điểm:"+point);
 }
 
+let kq = 5;
+
+export function square(x) {
+    return x * x;
+}
+
