@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.cac-nut {
+    width: 1140px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.hop-thoai img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+button#btn-open {
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid #258769;
+    color: #258769;
+    padding: 10px 12px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button#btn-open:hover {
+    color: white;
+    background: #258769;
+}
+
+.hop-thoai {
+    width: 500px;
+    position: absolute;
+    top: 27%;
+    left: 30%;
+    visibility: hidden;
+    margin-left: 0px;
+    opacity: 0;
+    transform: translateZ(-1500px) rotateY(70deg);
+}
+
+.hop-thoai button.close {
+    position: absolute;
+    z-index: 2;
+    right: 0px;
+    top: 0px border: 1px solid #888;
+    background: violet;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(97, 73, 62, 0.5);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.khoi {
+    perspective: -1500px;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateZ(0) rotateY(0);
+    transition: 1.5s;
+}
+
+@-webkit-keyframes hien-ra {
+    0% {
+        transform: translateZ(-1500px) rotateY(70deg);
+    }
+    50% {
+        transform: translateZ(0) rotateY(70deg);
+    }
+    100% {
+        transform: translateZ(0) rotateY(0);
+    }
+}
+
+.hop-thoai .show {
+    opacity: 1;
+    visibility: visible;
+    animation: hien-ra 1s forwards;
+}

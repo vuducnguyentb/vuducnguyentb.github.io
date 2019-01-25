@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/b4.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="jquery-accordion">
+            <div class="khoi">
+                <h3>Collapse 1</h3>
+                <div class="noi-dung">
+                    <p>Similique rutrum fermentum, enim. Eiusmod delectus ipsum, occaecat duis placeat nemo inventore. Iaculis mattis hendrerit risus ad enim, nibh voluptatem! Occaecati volutpat quo sunt feugiat culpa. Pulvinar quos, dignissim doloremque
+                        incididunt ipsum itaque dui quia! Dolore. Corrupti ducimus, tempore, senectus sint magnam, ratione sunt nonummy, enim? Erat fusce! Lorem proident suscipit proin dolor dignissim? Ipsum orci, reprehenderit in consequuntur proin,
+                        facilis nostrud doloribus, risus? Torquent, repellat, soluta adipisci, et, explicabo. Repudiandae dolorum, laudantium taciti at mollitia labore potenti sociis tempus? Minim cum exercitation odio, nisi tellus recusandae quo aperiam
+                        hymenaeos, quo penatibus ante, diamlorem atque elit viverra sociosqu, tenetur nascetur.</p>
+                </div>
+            </div>
+            <!-- end khoi -->
+            <div class="khoi">
+                <h3>Collapse 2</h3>
+                <div class="noi-dung">
+                    <p>Similique rutrum fermentum, enim. Eiusmod delectus ipsum, occaecat duis placeat nemo inventore. Iaculis mattis hendrerit risus ad enim, nibh voluptatem! Occaecati volutpat quo sunt feugiat culpa. Pulvinar quos, dignissim doloremque
+                        incididunt ipsum itaque dui quia! Dolore. Corrupti ducimus, tempore, senectus sint magnam, ratione sunt nonummy, enim? Erat fusce! Lorem proident suscipit proin dolor dignissim? Ipsum orci, reprehenderit in consequuntur proin,
+                        facilis nostrud doloribus, risus? Torquent, repellat, soluta adipisci, et, explicabo. Repudiandae dolorum, laudantium taciti at mollitia labore potenti sociis tempus? Minim cum exercitation odio, nisi tellus recusandae quo aperiam
+                        hymenaeos, quo penatibus ante, diamlorem atque elit viverra sociosqu, tenetur nascetur.</p>
+                </div>
+            </div>
+            <!-- end khoi -->
+            <div class="khoi">
+                <h3>Collapse 3</h3>
+                <div class="noi-dung">
+                    <p>Similique rutrum fermentum, enim. Eiusmod delectus ipsum, occaecat duis placeat nemo inventore. Iaculis mattis hendrerit risus ad enim, nibh voluptatem! Occaecati volutpat quo sunt feugiat culpa. Pulvinar quos, dignissim doloremque
+                        incididunt ipsum itaque dui quia! Dolore. Corrupti ducimus, tempore, senectus sint magnam, ratione sunt nonummy, enim? Erat fusce! Lorem proident suscipit proin dolor dignissim? Ipsum orci, reprehenderit in consequuntur proin,
+                        facilis nostrud doloribus, risus? Torquent, repellat, soluta adipisci, et, explicabo. Repudiandae dolorum, laudantium taciti at mollitia labore potenti sociis tempus? Minim cum exercitation odio, nisi tellus recusandae quo aperiam
+                        hymenaeos, quo penatibus ante, diamlorem atque elit viverra sociosqu, tenetur nascetur.</p>
+                </div>
+            </div>
+            <!-- end khoi -->
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="container">
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header">
+                                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                Collapsible Group Item #1
+                              </a>
+                                </div>
+                                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                              Collapsible Group Item #2
+                            </a>
+                                </div>
+                                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                Collapsible Group Item #3
+                              </a>
+                                </div>
+                                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        <button id="btn-top" type="button">Go to Top</button>
+    </div>
+</body>
+<script src="jquery.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap4/js/bootstrap.min.js"></script>
+<script src="js/b4.js"></script>
+
+</html>

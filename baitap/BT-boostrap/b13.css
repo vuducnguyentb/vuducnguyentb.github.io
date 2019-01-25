@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    border-radius: 0 !important;
+}
+/* xử lý menu */
+.dropdown{
+    position: relative;
+    display:inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: blanchedalmond;
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  /* list-product */
+  .list-product-title{
+      width: 100%;
+      text-transform: uppercase;
+      margin-left: 5px;
+   margin-right: 5px;
+  }
+  .list-subtitle{
+      width: 100%;
+      margin-left: 5px;
+   margin-right: 5px;
+  }
+  /* product-card */
+  .product-card{
+   width: 280px;
+   overflow: hidden;
+   margin-left: 5px;
+   margin-right: 5px;
+  }
+  .product-title{
+      margin-bottom:0.25rem;
+  }
+  .product-price{
+      position: relative;
+  }
+  .del-price{
+      text-decoration:line-through;
+  }
+  .new-price{
+      color: brown;
+      position: absolute;
+      top:0;
+      right:0.5rem;
+  }
+  .btn-add-to-cart{
+      background-color:rgb(3, 59, 182) !important;
+      color: rgb(214, 227, 238) !important;
+  }
+  .btn-add-to-cart:hover{
+      background-color: rgb(219, 149, 19) !important;
+  }
+  .btn-detail{
+      border: 1px solid rgb(27, 9, 9) !important;
+  }
+  .btn-detail:hover{
+      color: aliceblue !important;
+  }
