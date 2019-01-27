@@ -30,4 +30,4 @@ $(document).ready(
                 $('.mobile-nav-icon').removeClass("fa-times");
             }
         })
-    }
+    });
