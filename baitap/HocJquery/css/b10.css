@@ -72,7 +72,7 @@ span#btn-next {
 .nut-slide ul li {
     width: 20px;
     height: 20px;
-    background: whitesmoke;
+    background: #5c0707;
     opacity: 0.6;
     list-style: none;
     border-radius: 50%;
@@ -130,4 +130,9 @@ span#btn-next {
     to {
         transform: translateX(0);
     }
+}
+
+.nut-slide ul li.active-nut {
+    opacity: 0.8;
+    background-color: cadetblue;
 }

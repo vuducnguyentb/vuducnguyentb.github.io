@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content a {
+    display: block;
+    width: 30%;
+}
+
+.content a img {
+    width: 100%;
+}
