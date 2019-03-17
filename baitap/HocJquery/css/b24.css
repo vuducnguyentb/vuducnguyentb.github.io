@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.content {
+    width: 1170px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+/* cahs 1 dùng gif */
+
+.load {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(221, 130, 130);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: block;
+    overflow: hidden;
+    opacity: 0.8;
+}
+
+.load img {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* cách 2 animate */
+
+.loader {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(23, 205, 211);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: block;
+    overflow: hidden;
+    opacity: 0.8;
+}
+
+.icon {
+    color: azure;
+    font-size: 66px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.xoay {
+    animation: xoay 1.5s linear infinite;
+}
+
+@-webkit-keyframes xoay {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}

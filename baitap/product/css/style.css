@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    background: #ebebeb;
+}
+
+
+/* --------PRODUCT-LEFT--------- */
+
+.product-left {
+    position: relative;
+    width: 100%;
+}
+
+.product-selling {
+    position: absolute;
+    top: 14px;
+    left: -14px;
+}
+
+.product-left .product-selling img {
+    width: 100%;
+}
+
+.product-left .img-product img {
+    width: 100%;
+}
+
+.info-img {
+    width: 100%;
+    position: absolute;
+    bottom: 11px;
+    left: 0;
+    color: #ffffff;
+    z-index: 999;
+}
+
+.item-img {
+    font-size: 15px;
+}
+
+.info-left {
+    float: left;
+    margin-left: 10px;
+}
+
+.info-left .info-long-day {
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.info-right {
+    float: right;
+    margin-right: 10px;
+}
+
+
+/* --------PRODUCT-RIGHT--------- */
+
+.product-right {
+    margin-left: -15px;
+}
+
+.product-details {
+    margin-left: -20px;
+}
+
+.product-details h3 {
+    height: 40px;
+    margin-top: 9px;
+    font-family: Helvetica;
+    font-size: 0.98em;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #272727;
+}
+
+.product-schedue {
+    margin-top: 11px;
+}
+
+.product-schedue p {
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #2e2e2e;
+}
+
+.product-schedue p img {
+    display: inline-block;
+    margin-bottom: -3px;
+}
+
+.product-schedue p .ml-8 {
+    margin-left: 8px;
+}
+
+.product-schedue p .ml-129 {
+    margin-left: 129px;
+}
+
+.product-schedue p:first-child {
+    margin-bottom: 39px;
+}
+
+.product-schedue p:nth-child(2) {
+    margin-bottom: 17px;
+}
+
+.uperCase {
+    font-weight: 900;
+}
+
+hr {
+    border-top: 2px solid #d5111885;
+    width: 100%;
+}
+
+.service {
+    margin-top: -7px;
+}
+
+.service ul {
+    list-style-type: disc;
+}
+
+.service ul li {
+    margin-left: 15px;
+    width: 230px;
+    height: 20.5px;
+    float: left;
+    margin-bottom: 11px;
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #2e2e2e;
+}
+
+.service ul li span img {
+    display: inline-block;
+    margin-bottom: 1px;
+}
+
+.product-prices h3 {
+    font-size: 1.6rem;
+}
+
+.product-prices h3 .price-old {
+    font-family: HelveticaNeue;
+    font-size: 18px;
+    text-align: right;
+    color: #2e2e2e;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.product-prices h2 {
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ec2324;
+    margin-top: 5px;
+    margin-bottom: 11px;
+}
+
+.product-prices h2 .price-new {
+    font-size: 16px;
+    font-weight: normal;
+    color: #2e2e2e;
+}
+
+.mt-5 {
+    margin-top: 67px !important;
+}
+
+.btn-dat-ngay {
+    width: 161px;
+    height: 40px;
+    background-color: #ec2324;
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+@media (max-width:1146px) {}
