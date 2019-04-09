@@ -1,0 +1,21 @@
+@media (min-width:1200px) {}
+
+@media (min-width:992px) and (max-width:1199px) {}
+
+@media (min-width:768px) and (max-width:991px) {}
+
+@media (min-width:576px) and (max-width:767px) {}
+
+@media (max-width:768px) {}
+
+@media (max-width:575px) {
+    .register {
+        padding: 40px 40px 50px 40px;
+    }
+}
+
+@media (max-width:480px) {
+    .register {
+        padding: 40px 5px 50px 5px;
+    }
+}

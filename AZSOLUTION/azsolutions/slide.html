@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="vendor/boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/css/slick.css">
+    <link rel="stylesheet" href="vendor/css/slick-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .slider {
+            width: 50%;
+            margin: 100px auto;
+        }
+        
+        .slider0 {
+            width: 80%;
+            margin: 100px auto;
+        }
+        
+        .slick-slide {
+            margin: 0px 20px;
+        }
+        
+        .slick-slide img {
+            width: 100%;
+        }
+        
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+        }
+        
+        .slick-slide {
+            transition: all ease-in-out .3s;
+            opacity: .2;
+        }
+        
+        .slick-active {
+            opacity: .5;
+        }
+        
+        .slick-current {
+            opacity: 1;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="slider slider-1">
+        <section class="lazy slider0" data-sizes="50vw">
+            <div>
+                <img src="./resources/images/ks1.png" data-sizes="100vw">
+            </div>
+            <div>
+                <img src="./resources/images/ks2.png" data-sizes="100vw">
+            </div>
+            <div>
+                <img src="./resources/images/ks3.png" data-sizes="100vw">
+            </div>
+            <div>
+                <img src="./resources/images/ks4.png" data-sizes="100vw">
+            </div>
+            <div>
+                <img src="./resources/images/ks5.png" data-sizes="100vw">
+            </div>
+            <div>
+                <!-- this slide should inherit the sizes attr from the parent slider -->
+                <img src="./resources/images/ks6.png" data-sizes="100vw">
+            </div>
+        </section>
+    </section>
+    <section class="slider slider-2 ">
+        <section class="center slider0">
+            <div>
+                <img src="resources/images/ks1.png">
+            </div>
+            <div>
+                <img src="resources/images/ks2.png">
+            </div>
+            <div>
+                <img src="resources/images/ks3.png">
+            </div>
+            <div>
+                <img src="resources/images/ks4.png">
+            </div>
+            <div>
+                <img src="resources/images/ks5.png">
+            </div>
+            <div>
+                <img src="resources/images/ks6.png">
+            </div>
+        </section>
+    </section>
+</body>
+<script src="vendor/js/jquery.min.js "></script>
+<script src="vendor/js/popper.min.js "></script>
+<script src="vendor/js/slick.min.js "></script>
+<script src="vendor/boostrap/js/bootstrap.min.js "></script>
+<script src="resources/js/script2.js "></script>
+<script>
+    $(document).ready(function() {
+        $(".lazy ").slick({
+
+        });
+        $(".center").slick({
+            dots: true,
+            infinite: true,
+            centerMode: true,
+            slidesToShow: 4,
+            slidesToScroll: 0
+        });
+        $(".slider ").slick({
+            asNavFor: '.slider'
+        });
+
+    });
+</script>
+
+</html>

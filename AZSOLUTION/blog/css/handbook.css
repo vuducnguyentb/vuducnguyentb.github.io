@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Roboto;
+    font-size: 14px;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+
+/* ------------------gerenal---------------- */
+
+h3 {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+
+/* ------------------HOT NEW---------------- */
+
+.hot-new .img-new-hot {
+    position: relative;
+}
+
+.hot-new .img-new-hot img {
+    width: 100%;
+}
+
+.hot-new .title-img {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 5px);
+    color: #fff;
+}
+
+.hot-new .title-img:hover {
+    cursor: pointer;
+    background: #066839;
+}
+
+.hot-new .title-img p {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 9px 10px 0 10px;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.hot-new .footer-title {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    align-items: baseline;
+}
+
+.hot-new .footer-title .btn-new {
+    display: block;
+    width: 97px;
+    height: 24px;
+    background: #ff0202;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 10px;
+    color: #fff;
+}
+
+.hot-new .footer-title span {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.hot-new .right-new-hot {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.hot-new .right-new-hot .img-item {
+    width: 50%;
+    ;
+}
+
+.pdr-5 {
+    padding-right: 5px;
+}
+
+.pdl-5 {
+    padding-left: 5px;
+}
+
+.hot-new .right-new-hot .img-new-hot {
+    margin-bottom: 10px;
+}
+
+.hot-new .right-new-hot .img-item:nth-child(odd) {
+    padding-right: 5px;
+}
+
+.hot-new .right-new-hot .img-item:nth-child(even) {
+    padding-left: 5px;
+}
+
+
+/* ------------------TRAVEL GUIDE---------------- */
+
+.travel-guide {}
+
+.travel-guide-item {
+    background: #fff;
+    margin-bottom: 24px;
+}
+
+.travel-guide-item:hover {
+    box-shadow: 2px 2px 2px #444444;
+    cursor: pointer;
+}
+
+.travel-guide-item .item-img img {
+    width: 100%;
+}
+
+.travel-guide-item .title-travel {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    padding: 10px 10px 7px 10px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.travel-guide-item .title-travel:hover {
+    color: #066839;
+}
+
+.travel-guide-item .intro-travel {
+    color: #575757;
+    padding: 0 10px 10px 10px;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.travel-guide-item .footer-travel {
+    display: flex;
+    padding-bottom: 10px;
+    align-items: baseline;
+}
+
+.travel-guide-item .footer-travel a {
+    width: 114px;
+    height: 24px;
+    border-radius: 3px;
+    background-color: #ff0202;
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 10px;
+}
+
+.travel-guide-item .footer-travel span {
+    margin-left: 10px;
+    color: #000;
+}
+
+.travel-guide .more-travel {
+    display: flex;
+    justify-content: center;
+    margin-top: -4px;
+}
+
+.travel-guide .more-travel a {
+    display: block;
+    width: 145px;
+    height: 36px;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px 0 #bbbbbb;
+    text-align: center;
+    line-height: 36px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #bbbbbb;
+}
+
+.travel-guide .more-travel a:hover {
+    background: #066839;
+    color: #fff;
+}
+
+.travel-guide .more-travel a img {
+    margin-left: 5px;
+}
+
+
+/* LOGO */
+
+.logo {
+    margin-top: 50px;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+}
+
+.app-slide-travel {
+    display: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+    color: #066839;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #066839;
+}
+
+.slick-dots li button:before {
+    font-size: 10px;
+}

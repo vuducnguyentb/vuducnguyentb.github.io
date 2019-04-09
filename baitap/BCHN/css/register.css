@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Roboto;
+    font-size: 14px;
+    color: black;
+    background: #f1f1f1;
+}
+
+section {
+    height: auto;
+    background: #f1f1f1;
+    position: relative;
+}
+
+
+/* ----------------------GENERAL---------------- */
+
+.line {
+    display: block;
+    border-bottom: 1px solid #036c5c;
+    margin: 30px 0;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #036c5c;
+}
+
+.title {
+    font-weight: bold;
+    border-bottom: solid 1px #019680;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.main {
+    margin-top: -15px;
+    height: auto;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: baseline;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.register {
+    max-width: 840px;
+    padding: 40px 240px 50px 240px;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+.register .register-form {
+    padding-top: 30px;
+}
+
+.register .register-form input.form-control {
+    height: 36px;
+}
+
+.info-person .note {
+    font-size: 12px;
+    font-style: italic;
+    color: #777777;
+    margin-bottom: 24px;
+}
+
+.register-form .info-person p span,
+.register-form .info-account p span {
+    color: #fd0000
+}
+
+.register-form .info-person .birth-day {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-person p,
+.info-account p {
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.info-person ::-webkit-input-placeholder,
+.info-account ::-webkit-input-placeholder {
+    font-size: 12px;
+    font-style: italic;
+    color: #9b9b9b;
+}
+
+.birth-day .form-group {
+    position: relative;
+    width: 99px;
+}
+
+.birth-day .form-group i {
+    position: absolute;
+    font-size: 20px;
+    top: 3px;
+    right: 14px;
+    color: #777777;
+}
+
+.birth-day .form-group .form-control {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+    color: #000;
+    height: 36px !important;
+}
+
+.birth-day .form-group select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.btn-register {
+    width: 200px;
+    height: 36px;
+    border-radius: 3px;
+    background-color: #019680;
+    font-weight: bold;
+    text-align: center;
+    color: #fbf000;
+    margin-top: 30px;
+}
+
+.btn-register:hover {
+    background-color: #036c5c;
+}

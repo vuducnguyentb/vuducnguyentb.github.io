@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+    <h2>{{title}}</h2>
+    <pre>{{person |json}}</pre>
+    <ul>
+        <li *ngFor="let j of person">
+            {{j.name}}--{{j.age}}
+        </li>
+    </ul>
+    <button (click)="change()">Click for change</button>
+</div>

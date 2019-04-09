@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Roboto;
+    font-size: 14px;
+    color: #575757;
+}
+
+body {
+    background: #ebebeb;
+}
+
+
+/* <!-- --------MAIN-CONTENT----- --> */
+
+.main-content {
+    background: #fff;
+}
+
+.main-content .img-banner {
+    position: relative;
+}
+
+.main-content .img-banner img {
+    width: 100%;
+}
+
+.main-content .img-banner .title-img-banner {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    color: #fff;
+    align-items: baseline;
+    margin: 10px;
+}
+
+.main-content .title-img-banner a {
+    display: block;
+    width: 114px;
+    height: 24px;
+    border-radius: 3px;
+    background-color: var(--red);
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+}
+
+.main-content .title-img-banner span {
+    margin-left: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--black);
+    margin: 20px 10px;
+}
+
+.main-content .info-content {
+    margin: 20px;
+    color: #575757;
+}
+
+.main-content figure img {
+    width: 100%;
+    padding: 10px;
+}
+
+.main-content .lido-travel {
+    font-weight: bold;
+    color: #066839;
+    text-align: right;
+    margin: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+    padding-bottom: 20px;
+}
+
+.main-content .new-relate p {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--black);
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+
+.main-content .new-relate ul {
+    list-style: none;
+}
+
+.main-content .new-relate ul li {
+    font-weight: 500;
+    color: #575757;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+
+/* <!-- --------RIGHT-CONTENT----- --> */
+
+.new-posts {
+    background: #fff;
+    margin-bottom: 24px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #066839;
+    padding: 10px;
+}
+
+.new-posts .item-new-post {
+    display: inline-block;
+    padding: 10px;
+}
+
+.new-posts .img-new-post {
+    width: 100px;
+    float: left;
+    height: 100%;
+}
+
+.new-posts .info-new-post {
+    overflow: hidden;
+    height: 90px;
+    float: right;
+    width: calc(100% - 100px);
+}
+
+.new-posts .img-new-post img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.new-posts .info-new-post .title-new-post {
+    padding-left: 5px;
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 0;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.new-posts .info-new-post .time-post {
+    font-size: 12px;
+    margin-bottom: 7px;
+    padding-left: 5px;
+}
+
+.new-posts .info-new-post a {
+    display: block;
+    width: 97px;
+    height: 24px;
+    border-radius: 3px;
+    background-color: #ff0202;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 5px;
+    text-align: center;
+}
+
+
+/* LOGO */
+
+.logo {
+    margin-top: 10px;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+}

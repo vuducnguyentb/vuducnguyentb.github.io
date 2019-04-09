@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Roboto;
+    font-size: 14px;
+    color: #575757;
+}
+
+body {
+    background: #ebebeb;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin: 20px 0;
+}
+
+.flex-md-flow {
+    flex-direction: row !important;
+}
+
+.pdr-0 {
+    padding-right: 0;
+}
+
+.pdl-0 {
+    padding-left: 0;
+}
+
+.map {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.form-info {
+    background: #fff;
+    padding-left: 10px;
+    background: #fff;
+    padding: 10px;
+}
+
+.form-info .form-info-detail {
+    margin-right: 183px;
+}
+
+.form-info .title-form {
+    font-size: 24px;
+    font-weight: bold;
+    color: #066839;
+    margin: 10px 0;
+}
+
+.form-info label {
+    font-size: 14px;
+    color: black;
+    margin: 10px 0 4px 0;
+}
+
+.form-info label span {
+    color: #ff0202;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 12px;
+    font-style: italic;
+    color: #bbbbbb;
+}
+
+.form-info .btn-send {
+    width: 140px;
+    height: 36px;
+    border-radius: 3px;
+    background: #0a8f4f;
+    font-size: 14px;
+    font-weight: bold;
+    color: #f9da00;
+    margin-top: 20px;
+}
+
+.form-info .btn-send:hover {
+    background: #066839;
+}
+
+
+/* <!-- CONTACT INFO --> */
+
+.contact-info {
+    background-color: #066839;
+}
+
+.contact-info .logo-contact {
+    padding: 65px 0 65px 71px;
+}
+
+.contact-info .logo-contact img {
+    height: 100px;
+}
+
+.contact-info .office {}
+
+.contact-info .office .title-office {
+    width: 53%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border-bottom: 2px solid #ffc200;
+    padding-top: 40px;
+}
+
+.contact-info .office .item-office {
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    margin-bottom: 6px;
+}
+
+.contact-info .office .item-office img {
+    height: 24px;
+}
+
+.contact-info .office .item-office span {
+    margin-left: 5px;
+}
+
+.contact-info .time-work .title-time-work {
+    padding-top: 40px;
+}
+
+.contact-info .time-work span {
+    width: 53%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border-bottom: 2px solid #ffc200;
+}
+
+.contact-info .time-work .item-time-work {
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.partner-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 60px;
+}
+
+.partner img {
+    margin-left: 100px;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+    color: #066839;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #066839;
+}
+
+.slick-dots li button:before {
+    font-size: 10px;
+}
+
+button.slick-prev.slick-arrow {
+    visibility: hidden;
+}
+
+button.slick-next.slick-arrow {
+    visibility: hidden;
+}
+
+.partner-static {
+    display: none;
+}

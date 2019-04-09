@@ -1,0 +1,137 @@
+@media (min-width:1200px) {
+    .app-slide-blog {
+        display: none;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .app-slide-blog {
+        display: none;
+    }
+    button.slick-prev.slick-arrow {
+        visibility: hidden;
+    }
+    button.slick-next.slick-arrow {
+        visibility: hidden;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .hot-new .right-new-hot {
+        display: none;
+    }
+    .app-slide-blog {
+        display: block;
+    }
+    button.slick-prev.slick-arrow {
+        visibility: hidden;
+    }
+    button.slick-next.slick-arrow {
+        visibility: hidden;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .hot-new .right-new-hot {
+        display: none;
+    }
+    .hot-new .img-new-hot {
+        margin-bottom: 10px;
+    }
+    .app-slide-blog {
+        display: block;
+    }
+    .pdr-5 {
+        padding-right: 15px;
+    }
+    .pdl-5 {
+        padding-left: 15px;
+    }
+    button.slick-prev.slick-arrow {
+        visibility: hidden;
+    }
+    button.slick-next.slick-arrow {
+        visibility: hidden;
+    }
+}
+
+@media (max-width:768px) {
+    .hot-new .right-new-hot {
+        display: none;
+    }
+    .hot-new .img-new-hot {
+        margin-bottom: 10px;
+    }
+    .app-slide-blog {
+        display: block;
+    }
+    .pdr-5 {
+        padding-right: 15px;
+    }
+    .pdl-5 {
+        padding-left: 15px;
+    }
+    button.slick-prev.slick-arrow {
+        visibility: hidden;
+    }
+    button.slick-next.slick-arrow {
+        visibility: hidden;
+    }
+}
+
+@media (max-width:575px) {
+    .hot-new .right-new-hot {
+        display: none;
+    }
+    .hot-new .img-new-hot {
+        margin-bottom: 10px;
+    }
+    .app-slide-blog {
+        display: block;
+    }
+    .pdr-5 {
+        padding-right: 15px;
+    }
+    .pdl-5 {
+        padding-left: 15px;
+    }
+    button.slick-prev.slick-arrow {
+        visibility: hidden;
+    }
+    button.slick-next.slick-arrow {
+        visibility: hidden;
+    }
+    .travel-guide .travel-list {
+        display: none;
+    }
+    .app-slide-travel {
+        display: block;
+    }
+    .travel-guide .more-travel {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:480px) {
+    .hot-new .right-new-hot {
+        display: none;
+    }
+    .hot-new .img-new-hot {
+        margin-bottom: 10px;
+    }
+    .app-slide-blog {
+        display: block;
+    }
+    .pdr-5 {
+        padding-right: 15px;
+    }
+    .pdl-5 {
+        padding-left: 15px;
+    }
+    button.slick-prev.slick-arrow {
+        visibility: hidden;
+    }
+    button.slick-next.slick-arrow {
+        visibility: hidden;
+    }
+}

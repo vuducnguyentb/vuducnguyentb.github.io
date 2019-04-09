@@ -1,0 +1,92 @@
+                @media (min-width:1200px) {}
+                
+                @media (min-width:992px) and (max-width:1199px) {
+                    .form-info .form-info-detail {
+                        margin-right: 120px;
+                    }
+                }
+                
+                @media (min-width:768px) and (max-width:991px) {
+                    .form-info .form-info-detail {
+                        margin-right: 100px;
+                    }
+                    .contact-info .logo-contact {
+                        padding: 65px 0 0 0;
+                    }
+                }
+                
+                @media (min-width:576px) and (max-width:767px) {
+                    .slide-partner {
+                        display: none;
+                    }
+                    .partner-static {
+                        display: block;
+                    }
+                    .pdr-0 {
+                        padding-right: 15px;
+                    }
+                    .pdl-0 {
+                        padding-left: 15px;
+                    }
+                    .map {
+                        height: 438px;
+                    }
+                    .flex-column-reverse {
+                        flex-direction: column-reverse !important;
+                    }
+                }
+                
+                @media (max-width:768px) {
+                    .form-info {
+                        margin-bottom: 10px;
+                        border-radius: 3px;
+                        box-shadow: 0 5px 10px 0 #ebebeb;
+                    }
+                    .contact-info .office {
+                        margin-left: 15px;
+                    }
+                    .contact-info .time-work {
+                        margin-left: 15px;
+                    }
+                    .partner img {
+                        margin-left: 100px;
+                        margin-bottom: 52px;
+                    }
+                }
+                
+                @media (max-width:575px) {
+                    .form-info .form-info-detail {
+                        margin-right: 120px;
+                    }
+                    .flex-column-reverse {
+                        flex-direction: column-reverse !important;
+                    }
+                    .pdr-0 {
+                        padding-right: 15px;
+                    }
+                    .pdl-0 {
+                        padding-left: 15px;
+                    }
+                    .map {
+                        height: 438px;
+                    }
+                    .slide-partner {
+                        display: none;
+                    }
+                    .partner-static {
+                        display: block;
+                    }
+                }
+                
+                @media (max-width:480px) {
+                    .slide-partner {
+                        display: none;
+                    }
+                    .partner-static {
+                        display: block;
+                    }
+                    .partner img {
+                        margin-left: 66px;
+                        margin-bottom: 52px;
+                    }
+                }
