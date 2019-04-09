@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tour-filter-bar {
+    background: #272727;
+    height: 50px;
+}
+
+.select-map {
+    width: 269px;
+    height: 30px;
+    margin-top: 5px;
+    position: relative;
+    float: left;
+}
+
+.red-map {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+
+.select-map .form-control {
+    padding-left: 43px;
+    cursor: pointer;
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+.check-tour {
+    float: left;
+    margin-top: 5px;
+}
+
+.btn-check {
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    float: left;
+}
+
+.btn-check:nth-last-of-type(1) {
+    vertical-align: middle;
+    background: url('../images/checked.png')left top no-repeat;
+}
+
+.w-24 {
+    display: none;
+}
+
+.form-check-label {
+    color: #ffffff;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.select-sort {
+    width: 173px;
+    height: 30px;
+    margin-top: 5px;
+    float: left;
+}
+
+.select-sort .form-control {
+    padding-left: 10px;
+    cursor: pointer;
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #2e2e2e;
+}
+
+.tour-tip {
+    margin-top: 1px;
+    float: left;
+}
+
+.menu-sau {
+    background: #e73f3f;
+    height: 150px;
+}

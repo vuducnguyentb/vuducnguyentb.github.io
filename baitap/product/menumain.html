@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/menu2.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid menu-main">
+        <div class="container">
+            <div class="select-map">
+                <div class="red-map">
+                    <img src="images/red.png" alt="">
+                </div>
+                <div class="form-group">
+                    <select class="form-control">
+                              <option>Từ Hà Nội</option>
+                              <option>Từ Thái Bình</option>
+                              <option>Từ Bắc Giang</option>
+                            </select>
+                </div>
+            </div>
+            <div class="form-check">
+                <form action="">
+                    <div class="check-box">
+                        <input type="checkbox" checked="checked" name="tour1" id="tour1" value="TOUR GIỜ CHÓT">
+                        <label for="tour1"><span></span>TOUR GIỜ CHÓT</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox" name="tour2" id="" value="TOUR TIẾT KIỆM">
+                        <label for="tour1"><span></span>TOUR TIẾT KIỆM</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox" name="tour3" id="" value="TOUR BÁN CHẠY">
+                        <label for="tour1"><span></span>TOUR BÁN CHẠY</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox" name="tour3" id="" value="TOUR BÁN CHẠY">
+                        <label for="tour1"><span></span>TOUR TIÊU CHUẨN</label>
+                    </div>
+
+
+
+                </form>
+            </div>
+            <div class="select-sort">
+                <div class="form-group">
+                    <select class="form-control">
+                              <option>Sắp xếp</option>
+                              <option>Sắp xếp giảm</option>
+                              <option>Sắp xếp tăng</option>
+                     </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="jquery.min.js"></script>
+<script>
+    $(function() {
+        $("input[type=checkbox]+label span").click(function() {
+            if ($(this).hasClass("checked")) {
+                $(this).removeClass("checked")
+            } else {
+                $(this).addClass("checked")
+            }
+        });
+    })
+</script>
+
+</html>
