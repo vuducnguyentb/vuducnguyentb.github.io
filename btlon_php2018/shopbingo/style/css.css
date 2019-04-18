@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding:0;
+	margin:0;
+}
+.body{
+	background:#CCC;
+}
+.wrapper{
+	width:1200px;
+	height:auto;
+	border:0px solid #FFF;
+	margin:auto;
+}
+
+.header{
+	width:100%;
+	height:auto;
+	border: 0px solid #FFF;
+}
+
+.menu {
+	width:100%;
+	height:40px;
+	border:2px solid #FFF;
+}
+
+.menu ul{
+	width:100%;
+	height:40px;
+	list-style:none;
+}
+
+.menu ul li{
+	float: left;
+	line-height:40px;
+	margin-left:10px;
+	margin-right:10px;
+	text-align:center
+}
+
+.menu ul li a{
+	font-size:18px;
+	color:#000;
+	text-decoration:none;
+}
+
+.menu a:hover{
+	text-decoration:underline;
+	background:#CCC;
+	display:block;
+	
+}
+
+.content{
+	width:100%;
+	height:auto;
+}
+
+
+.left{
+	width:200px;
+	height:auto;
+	border:1px solid #FFF;
+	float:left;
+}
+
+.danhsachsanpham ul{
+	width:100%;
+	height:auto;
+	list-style:none;
+	background:#F4F4F4;
+	display:block;
+}
+
+.danhsachsanpham ul li{
+	margin-left:10px;
+	margin:5px;
+	display:block;
+}
+
+.danhsachsanpham a{
+	text-decoration:none;
+	color:#000;
+}
+
+.danhsachsanpham a:hover{
+	text-decoration:underline;
+	background:#CCC;
+	display:block;
+}
+.right{
+	width:990px;
+	height:auto;
+	float:right;
+	border:1px solid #FFF;
+}
+
+.right a{
+	color:#06F;
+}
+
+.sanphamall ul{
+	width:100%;
+	list-style:none;
+}
+
+.sanphamall  ul li{
+	width:150px;
+	height:auto;
+	text-align:center;
+	float: left;
+	margin-left: 5px;
+}
+
+.sanphamall ul li a{
+	text-decoration:none;
+}
+
+.sanphamall a:hover{
+	text-decoration:underline;
+}
+
+.clear{
+	clear:both;
+}
+
+.footer{
+	width:100%;
+	height:auto;
+	border:1px solid #FFF;
+}
+.searchform{
+	margin-top:10px;
+	float:right;
+}
+
+
